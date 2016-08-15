@@ -3,7 +3,8 @@ using System.Collections;
 
 public class SpawnerScript : MonoBehaviour
 {
-
+	public float timeMin = 5f;
+	public float timeMax = 8f;
     // Use this for initialization
     void Start()
     {
@@ -25,6 +26,5 @@ public class SpawnerScript : MonoBehaviour
     private GameObject SpawnObject;
     public GameObject[] SpawnObjects;
 
-    public float timeMin = 3f;
-    public float timeMax = 5f;
+
 }

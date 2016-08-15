@@ -1,10 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/// <summary>
-/// Spritesheet for Flappy Bird found here: http://www.spriters-resource.com/mobile_phone/flappybird/sheet/59537/
-/// Audio for Flappy Bird found here: https://www.youtube.com/watch?v=xY0sZUJWwA8
-/// </summary>
 public class FlappyScript : MonoBehaviour
 {
 
@@ -18,7 +14,12 @@ public class FlappyScript : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
+	{
+		#if UNITY_EDITOR
+		#elif UNITY_ANDROID
+		AdMob.Instance.displayAdds ();
+		#endif
+	
 
     }
 
