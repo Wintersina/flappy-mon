@@ -25,6 +25,6 @@ public class SpawnerScript : MonoBehaviour
     private GameObject SpawnObject;
     public GameObject[] SpawnObjects;
 
-    public float timeMin = 2f;
-    public float timeMax = 4f;
+    public float timeMin = 3f;
+    public float timeMax = 5f;
 }
