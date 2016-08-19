@@ -16,7 +16,9 @@ public class AdMob : MonoBehaviour {
 		#elif UNITY_ANDROID
 		Admob.Instance().initAdmob(bannerId, "ca-app-pub-7820479853095722/3214882293");
 		Admob.Instance().setTesting(true);
+        displayAdds();
 		#endif
+
 	}
 	
 	// Update is called once per frame
